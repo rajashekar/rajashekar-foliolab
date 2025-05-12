@@ -5,39 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rajashekar's Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+    /* Define gradient backgrounds for themes */
+    .bg-gradient-to-br.from-indigo-50.via-white.to-purple-50 {
+      background: linear-gradient(to bottom right, #eef2ff, #ffffff, #faf5ff);
+    }
+    .bg-gradient-to-r.from-indigo-500.to-purple-500 {
+      background: linear-gradient(to right, #6366f1, #a855f7);
+      color: white; /* Ensure text is white on gradient background */
+    }
+    /* Shadow styling for cards */
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card-shadow:hover {
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+    /* Button styling */
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .icon-button:hover {
+      opacity: 0.8;
+    }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-white">
     <div class="container mx-auto px-4 py-20">
-        <header class="text-center mb-16">
-            <h1 class="text-4xl font-bold mb-4">My Projects</h1>
-            <p class="text-gray-600">A showcase of my work</p>
-        </header>
-        <div class="grid gap-8 max-w-4xl mx-auto">
-            
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">WakeWordDetector</h2>
-                    <p class="text-gray-600 mb-4">WakeWordDetector is an open-source project designed to create a custom wake word detector. It aims to detect specific audio sequences (wake words) like "Ok, Google" to trigger actions in applications. The project includes detailed implementation steps from dataset preparation, feature extraction, model training, and testing, to inference using various methods like PyAudio, web sockets, ONNX, TensorFlow.js, and TFLite. The project references existing wake word detection systems like Firefox Voice and draws upon concepts of data pre-processing, audio feature extractions and model architectures for effective wake word detection.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/rajashekar/WakeWordDetector" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        
-                    </div>
-                </article>
-              
-                <article class="bg-white rounded-lg shadow-md p-6">
-                    <h2 class="text-2xl font-semibold mb-2">ethnicolr</h2>
-                    <p class="text-gray-600 mb-4">ethnicolr is a Python package that predicts an individual's race and ethnicity based on their name (first and last, or just last). It leverages US census data, Florida voting registration data, and Wikipedia data. The predictions offer varying levels of granularity depending on the utilized dataset, ranging from broad categories (e.g., Non-Hispanic White) to more specific ethnic groups. The package aims to provide insights into ethnicity and race using the model.</p>
-                    <div class="flex gap-2 flex-wrap">
-                        
-                    </div>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/rajashekar/ethnicolr" class="text-blue-600 hover:underline" target="_blank">View on GitHub</a>
-                        <a href="http://ethnicolr.readthedocs.io" class="text-blue-600 hover:underline" target="_blank">Live Demo</a>
-                    </div>
-                </article>
-              
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <header class="lg:col-span-4 flex justify-center">
+                <div class="sticky top-8 flex flex-col items-center">
+                    
+                    <h1 class="text-4xl font-bold mb-6 text-slate-800">rajashekar's Portfolio</h1>
+                    
+                </div>
+            </header>
+
+            <div class="lg:col-span-8">
+                
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">rmcp</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 16
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/rmcp" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">The rmcp repository hosts a Minecraft server and provides a simplified management interface for the game.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">Load data</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 3
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/pyppur" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">pyppur is a Python library for unsupervised dimensionality reduction through projection pursuit unsupervised methods, aiming to minimize reconstruction loss or distance distortion.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">projection-pursuit</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">reconstruction-loss</span>
+                        </div>
+                    </article>
+                  
+                    <article class="bg-white border-2 border-slate-100 hover:border-slate-200 transition-colors p-6 relative card-shadow mb-6">
+                        <div class="flex justify-between items-start">
+                            <h2 class="text-2xl font-semibold mb-2 text-slate-800">🤝 Adjacent — Related Repositories Recommender</h2>
+                            <div class="flex items-center gap-2">
+                                
+                                <span class="text-xs bg-amber-100 text-amber-800 px-2 py-1 rounded-full flex items-center">
+                                    ★ 4
+                                </span>
+                                
+                                <a href="https://github.com/gojiplus/adjacent" class="icon-button border border-gray-200 bg-white" target="_blank" title="View on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <p class="text-slate-800 mb-4">adjacent is a tool to list and link related repositories on GitHub. It allows developers to easily discover and connect with other projects that are closely related to their own.</p>
+                        <div class="flex gap-2 flex-wrap">
+                            <span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">github-tools</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">recommender</span><span class="bg-slate-800 text-white px-2 py-1 rounded-full text-sm">related-repos</span>
+                        </div>
+                    </article>
+                  
+            </div>
         </div>
     </div>
 </body>
